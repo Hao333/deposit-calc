@@ -1,2 +1,2 @@
 all: lab.c
-	gcc -g -wall -0 lab lab.c
+	gcc -g -wall lab.c -o lab
