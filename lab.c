@@ -1,6 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
 int main(){
-int a,b;
-int a,b;
 int a,b;
 printf ("vvedite summu ne menee 1k;a=");
 scanf("%d",&a);
@@ -27,5 +27,5 @@ printf ("\n");
 printf("summa v konce sroka=%d",a);
 printf ("\n");
 system("pause");
-    return 0
+    return 0;
 }
