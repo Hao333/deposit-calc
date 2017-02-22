@@ -2,19 +2,19 @@
 #include <stdlib.h>
 int proverkaA(int a){
     if (a<1000) {
-    printf ("error summa menee 1k");
+        printf ("error summa menee 1k");
     return 0;
     }
     else return a;
-}
+    }
 int proverkaB(int b){
     if (b<0 || b>365) {
-    printf("error ne vernoe kolichestvo dney");
+        printf("error ne vernoe kolichestvo dney");
     return 0;
     }
     else return b;
     
-}
+    }
 int summa(int a, int b){
     if (b>=0 && b<=30)
 	a=a*0.9;
@@ -25,7 +25,7 @@ int summa(int a, int b){
     if (b>=241 && b<=365)
 	a=a*1.12;
     return a;
-}
+    }
 
 int main(){
 int a,b;
