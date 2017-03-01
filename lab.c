@@ -2,14 +2,12 @@
 #include <stdlib.h>
 int proverkaA(int a){
     if (a<1000) {
-        printf ("error summa menee 1k");
     return 0;
     }
     else return a;
     }
 int proverkaB(int b){
     if (b<0 || b>365) {
-        printf("error ne vernoe kolichestvo dney");
     return 0;
     }
     else return b;
