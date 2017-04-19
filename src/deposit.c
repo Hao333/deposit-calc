@@ -1,24 +1,35 @@
-int proverkaA(int a){
-    if (a<1000)
-    return 0;
-    else return a;
+#include "deposit.h"
+
+float calc(int summa, int srok)
+{
+    float out;
+    switch (srok)
+    {
+        case 1: out = summa - ((summa/100)*10);
+        case 2: out = summa + ((summa/100)*2);
+        case 3: out = summa + ((summa/100)*6);
+        case 4: out = summa + ((summa/100)*12);
     }
-int proverkaB(int b){
-    if (b<0 || b>365)
-    return -1;
-    else return b;
-    }
-double summa(int a, int b){
-    double c;
-    if (b>=0 && b<=30)
-	c=a*0.9;
-    if (b>=31 && b<=120)
-	c=a*1.02;
-    if (b>=121 && b<=240)
-	c=a*1.06;
-    if (b>=241 && b<=365)
-	c=a*1.12;
-    if (c==a)
-	c=0;
-    return c;
-    }
+    return out;
+}
+
+int chooseSrok(int srok)
+{
+    if ((srok <= 30) && (srok >= 0))
+         {
+             srok = 1; //* Срок от 0 до 30
+	 }
+     if ((srok <= 120) && (srok >= 31))
+         {
+             srok = 2; //* Срок от 31 до 120
+	 }
+     if ((srok <= 240) && (srok >= 121))
+	 {
+             srok = 3; //* Срок от 121 до 240
+	 }
+     if ((srok <= 365) && (srok >= 241))
+         {
+             srok = 4; //* Срок от 241 до 365
+	 }
+     return srok;
+}

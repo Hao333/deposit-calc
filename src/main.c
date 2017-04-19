@@ -1,11 +1,24 @@
-int main(){
-int a,b;
-    printf ("vvedite summu ne menee 1k;a=");
-    scanf("%d",&a);
-    a=proverkaA(a);
-    printf ("\n vvedite srok vklada ot 0 do 365;b=");
-    scanf("%d",&b);
-    b=proverkaB(b);
-    printf("\n summa v konce=%.0f",summa(a,b));
-    return 0;
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "deposit.h"
+
+int main()
+{
+     do{
+        int summa=0, srok=0;
+        printf("Введите сумму вклада=");
+        scanf("%d",&summa);    
+        printf("Введите срок вклада=");
+        scanf("%d",&srok);
+
+        if((srok<=365)&&(summa>=1000)){
+            printf("Сумма вклада: %f\n", calc(summa, chooseSrok(srok)));
+            break;
+        }
+        else
+            printf("Введите коректно данные\n");
+
+        }while(1);   
 }
