@@ -1,3 +1,3 @@
 language: c
 
-script: make && cd bin && ./tests
+script: make && ./bin/tests
