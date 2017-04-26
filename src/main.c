@@ -4,7 +4,7 @@
 
 #include "deposit.h"
 
-int main()
+void main()
 {
      do{
         int summa=0, srok=0;
