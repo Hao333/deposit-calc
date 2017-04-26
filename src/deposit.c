@@ -5,10 +5,10 @@ float calc(int summa, int srok)
     float out;
     switch (srok)
     {
-        case 1: out = summa - ((summa/100)*10);
-        case 2: out = summa + ((summa/100)*2);
-        case 3: out = summa + ((summa/100)*6);
-        case 4: out = summa + ((summa/100)*12);
+        case 1: out = summa*0.9;break;
+        case 2: out = summa*1.02;break;
+        case 3: out = summa*1.06;break;
+        case 4: out = summa*1.12;break;
     }
     return out;
 }
@@ -17,19 +17,19 @@ int chooseSrok(int srok)
 {
     if ((srok <= 30) && (srok >= 0))
          {
-             srok = 1; //* Срок от 0 до 30
+             srok = 1;
 	 }
      if ((srok <= 120) && (srok >= 31))
          {
-             srok = 2; //* Срок от 31 до 120
+             srok = 2;
 	 }
      if ((srok <= 240) && (srok >= 121))
 	 {
-             srok = 3; //* Срок от 121 до 240
+             srok = 3;
 	 }
      if ((srok <= 365) && (srok >= 241))
          {
-             srok = 4; //* Срок от 241 до 365
+             srok = 4;
 	 }
      return srok;
 }
