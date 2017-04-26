@@ -4,7 +4,7 @@ BIN_F = bin/
 SRC_F = src/
 TEST_F = test/
 SOURCES_O = main.o deposit.o
-CFLAGS = -Wall -Werror
+CFLAGS = -Wall
 
 all: build deposit test
 
