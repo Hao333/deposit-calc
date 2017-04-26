@@ -9,8 +9,8 @@ CFLAGS = -Wall -Werror
 all: build deposit test
 
 build:
-	! -d bin && mkdir bin
-	! -d build && mkdir build
+	test ! -d bin && mkdir bin
+	test ! -d build && mkdir build
 
 deposit: $(SOURCES_O)
 	 $(CC) $(CFLAGS) $(BUILD_F)main.o $(BUILD_F)deposit.o -o $(BIN_F)deposit
