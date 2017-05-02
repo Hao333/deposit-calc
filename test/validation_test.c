@@ -1,4 +1,7 @@
 #include "../thirdparty/ctest.h"
+#include <iostream>
+
+using namespace std;
 
 CTEST(suite1, test1) {
     int result = chooseSrok(241);
