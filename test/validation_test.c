@@ -1,10 +1,9 @@
 #include "../thirdparty/ctest.h"
 
-CTEST(suite1, test1) {
+CTEST(validation, test1) {
     int result = chooseSrok(241);
     int expected = 4;
     ASSERT_EQUAL(expected, result);
-    cout<<"Vvedeno dney vklada 241, vibran 4 paket uslug";
 }
 
 CTEST(suite1, test2) {
