@@ -1,6 +1,6 @@
 #include "../thirdparty/ctest.h"
 
-CTEST(suite1, test1) {
+CTEST(dney vklada 241, vibran 4 paket) {
     int result = chooseSrok(241);
     int expected = 4;
     ASSERT_EQUAL(expected, result);
