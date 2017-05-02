@@ -4,7 +4,7 @@
 #include "../thirdparty/ctest.h"
 #include "deposit_test.c"
 #include "validation_test.c"
-#includ <iostream>
+#include <iostream>
 
 using namespace std;
 
